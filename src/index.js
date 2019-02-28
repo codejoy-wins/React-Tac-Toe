@@ -47,6 +47,7 @@ class Square extends React.Component {
     }
 
     handleClick (i) {
+        const winner = calculateWinner(this.state.squares);
         let msg = ""
         if(this.state.xIsNext){
             msg = "O"
@@ -54,7 +55,7 @@ class Square extends React.Component {
             msg = "X"
         }
         const squareszy = this.state.squares.slice();
-        if(squareszy[i]==null){
+        if(squareszy[i]==null && !winner){
             console.log("okay");
             squareszy[i] = `${msg}`;
             this.setState({xIsNext:!this.state.xIsNext});
