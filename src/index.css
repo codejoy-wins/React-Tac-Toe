@@ -15,6 +15,7 @@ body {
   
   .status {
     margin-bottom: 10px;
+    color: whitesmoke;
   }
   
   .square {
@@ -24,12 +25,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 68px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 68px;
   }
   
   .square:focus {
@@ -49,3 +50,19 @@ body {
     margin-left: 20px;
   }
   
+  
+  .xp2{
+    background-color: rgba(255, 0, 0, 0.479);
+    padding: 20px;
+  }
+  .xp{
+    background-color: rgba(0, 0, 255, 0.589);
+  }
+  #master {
+    background-color: red;
+  }
+
+  a{
+    text-decoration: none;
+    color: aqua;
+  }
