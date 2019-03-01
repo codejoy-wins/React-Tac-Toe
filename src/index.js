@@ -85,13 +85,13 @@ class Square extends React.Component {
         if(winner && !cat){
             // supreme = "Winner Game";
             xx = `winner is ${winner}`;
-            yy = <div onClick={()=>this.playAgain()}>play again?</div>
+            yy = <div onClick={()=>this.playAgain()}><h2>Play Again?</h2></div>
 
         }
         if(winner && cat){
             // supreme = "Win State";
             xx = `winner is ${winner}`;
-            yy = <div onClick={()=>this.playAgain()}>play again?</div>
+            yy = <div onClick={()=>this.playAgain()}><h2>Play Again?</h2></div>
         }
         
         if(cat == false && !winner){
